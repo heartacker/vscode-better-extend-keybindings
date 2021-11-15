@@ -1,0 +1,180 @@
+{
+    "name": "better-extend-keybindings",
+    "displayName": "VSCode Better Extend Keymap \u2328\uFE0F",
+    "description": "\u2328\uFE0F Better extend keybindings to make VSCode better! 更好的 无冲突 增强快捷键 使 VSCode 更好!\u2764\uFE0F",
+    "version": "0.0.1",
+    "publisher": "heartacker",
+    "author": {
+        "name": "heartacker",
+        "email": "heartacker@outlook.com",
+        "url": "https://www.github.com/heartacker"
+    },
+    "homepage": "https://github.com/heartacker/vscode-better-extend-keybindings",
+    "repository": "https://github.com/heartacker/vscode-better-extend-keybindings",
+    "bugs": {
+        "url": "https://github.com/heartacker/vscode-better-extend-keybindings/issues",
+        "email": "heartacker@outlook.com"
+    },
+    "readme": "README.md",
+    "extensionPack": [
+        "ryu1kn.text-marker"
+    ],
+    "extensionPackDel": [
+        "j-zeppenfeld.tab-indent-space-align"
+    ],
+    "capabilities": {
+        "untrustedWorkspaces": {
+            "supported": true,
+            "description": ""
+        },
+        "virtualWorkspaces": true
+    },
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "icon": "extend-keyboard.png",
+    "categories": [
+        "Keymaps",
+        "Other",
+        "Snippets"
+    ],
+    "contributes": {
+        "keybindings": [
+            {
+                "command": "workbench.view.scm",
+                "key": "ctrl+shift+g ctrl+shift+g",
+                "mac": "cmd+shift+g cmd+shift+g"
+            },
+            {
+                "command": "textmarker.toggleHighlight",
+                "key": "alt+f11",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "workbench.action.navigateBack",
+                "key": "f1"
+            },
+            {
+                "command": "workbench.action.navigateForward",
+                "key": "alt+f1",
+                "commentMacOS": "alt+f1"
+            },
+            {
+                "command": "editor.action.referenceSearch.trigger",
+                "key": "shift+f1",
+                "mac": "shift+f1",
+                "when": "editorHasReferenceProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor",
+                "commend": "查找引用"
+            },
+            {
+                "command": "editor.action.revealDefinition",
+                "key": "ctrl+f1",
+                "mac": "cmd+f1",
+                "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+            },
+            {
+                "command": "goToNextReference",
+                "key": "ctrl+f1",
+                "mac": "cmd+f1",
+                "when": "inReferenceSearchEditor || referenceSearchVisible"
+            },
+            {
+                "command": "workbench.action.terminal.newWithProfile",
+                "key": "ctrl+shift+oem_3",
+                "mac": "cmd+shift+oem_3",
+                "when": "terminalProcessSupported",
+                "commen": "选择工作区和 shell"
+            },
+            {
+                "command": "workbench.action.toggleMaximizedPanel",
+                "key": "ctrl+shift+alt+j",
+                "mac": "cmd+shift+alt+j",
+                "comment": "切换最大化面板"
+            },
+            {
+                "command": "editor.action.insertSnippet",
+                "key": "ctrl+alt+i",
+                "mac": "cmd+alt+i",
+                "when": "editorTextFocus || editorHasSelection",
+                "comment": "触发代码参数提示"
+            },
+            {
+                "command": "editor.action.triggerParameterHints",
+                "key": "ctrl+shift+i",
+                "mac": "cmd+shift+i",
+                "when": "editorHasSignatureHelpProvider && editorTextFocus",
+                "comment": "插入代码提示"
+            },
+            {
+                "command": "workbench.action.minimizeOtherEditors",
+                "key": "ctrl+win+oem_plus",
+                "comment": "ctrl+win+ + , 最大化编辑器组"
+            },
+            {
+                "command": "workbench.action.evenEditorWidths",
+                "key": "ctrl+win+oem_minus",
+                "comment": "ctrl+win+- ， 恢复编辑器组大小"
+            },
+            {
+                "command": "workbench.action.debug.selectandstart",
+                "key": "ctrl+alt+f5",
+                "mac": "cmd+alt+f5",
+                "comment": "选择那个去运行 debug"
+            },
+            {
+                "command": "workbench.action.tasks.runTask",
+                "key": "ctrl+shift+alt+b",
+                "mac": "cmd+alt+b",
+                "comment": "选择那个去 build"
+            },
+            {
+                "command": "explorer.newFile",
+                "key": "ctrl+n",
+                "mac": "cmd+n",
+                "when": "explorerViewletFocus"
+            },
+            {
+                "command": "explorer.newFolder",
+                "key": "ctrl+shift+n",
+                "mac": "cmd+shift+n",
+                "when": "explorerViewletFocus"
+            },
+            {
+                "command": "workbench.action.toggleAuxiliaryBar",
+                "key": "ctrl+alt+b",
+                "mac": "cmd+alt+b"
+            },
+            {
+                "command": "references-view.findImplementations",
+                "key": "shift+alt+f11",
+                "mac": "shift+alt+f11",
+                "when": "editorFocus"
+            },
+            {
+                "key": "ctrl+alt+o",
+                "mac": "cmd+alt+o",
+                "command": "outline.focus"
+            },
+            {
+                "key": "ctrl+up",
+                "when": "terminalFocus",
+                "command": "workbench.action.terminal.scrollToPreviousCommand"
+            },
+            {
+                "key": "ctrl+down",
+                "command": "workbench.action.terminal.scrollToNextCommand",
+                "when": "terminalFocus"
+            },
+            {
+                "key": "ctrl+shift+up",
+                "command": "workbench.action.terminal.selectToPreviousCommand",
+                "when": "terminalFocus"
+            },
+            {
+                "key": "ctrl+shift+down",
+                "command": "workbench.action.terminal.selectToNextCommand",
+                "when": "terminalFocus"
+            }
+        ]
+    }
+}
