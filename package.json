@@ -2,7 +2,7 @@
     "name": "better-extend-keybindings",
     "displayName": "VSCode Better Extend Keymap \u2328\uFE0F",
     "description": "\u2328\uFE0F Better extend keybindings to make VSCode better! 更好的 无冲突 增强快捷键 使 VSCode 更好!\u2764\uFE0F",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "heartacker",
     "author": {
         "name": "heartacker",
@@ -30,13 +30,24 @@
         "virtualWorkspaces": true
     },
     "engines": {
-        "vscode": "^1.62.0"
+        "vscode": "^1.22.0"
     },
     "icon": "extend-keyboard.png",
     "categories": [
         "Keymaps",
         "Other",
         "Snippets"
+    ],
+    "keywords": [
+        "快捷键",
+        "键盘",
+        "高效",
+        "keymap",
+        "better",
+        "shortcut",
+        "useful",
+        "key bindings",
+        "helpful"
     ],
     "contributes": {
         "keybindings": [
@@ -157,21 +168,25 @@
             },
             {
                 "key": "ctrl+up",
+                "mac": "cmd++up",
                 "when": "terminalFocus",
                 "command": "workbench.action.terminal.scrollToPreviousCommand"
             },
             {
                 "key": "ctrl+down",
+                "mac": "cmd+down",
                 "command": "workbench.action.terminal.scrollToNextCommand",
                 "when": "terminalFocus"
             },
             {
                 "key": "ctrl+shift+up",
+                "mac": "cmd+shift+up",
                 "command": "workbench.action.terminal.selectToPreviousCommand",
                 "when": "terminalFocus"
             },
             {
                 "key": "ctrl+shift+down",
+                "mac": "cmd+shift+down",
                 "command": "workbench.action.terminal.selectToNextCommand",
                 "when": "terminalFocus"
             }
