@@ -141,6 +141,18 @@
                 "comment": "插入代码提示"
             },
             {
+                "key": "alt+enter",
+                "mac": "alt+enter",
+                "command": "editor.action.quickFix",
+                "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+            },
+            {
+                "key": "alt+enter",
+                "mac": "alt+enter",
+                "command": "problems.action.showQuickFixes",
+                "when": "problemFocus"
+            },
+            {
                 "command": "workbench.action.minimizeOtherEditors",
                 "key": "ctrl+win+oem_plus",
                 "comment": "ctrl+win+ + , 最大化编辑器组"
@@ -148,7 +160,7 @@
             {
                 "command": "workbench.action.evenEditorWidths",
                 "key": "ctrl+win+oem_minus",
-                "comment": "ctrl+win+- ， 恢复编辑器组大小"
+                "comment": "ctrl+win+- , 恢复编辑器组大小"
             },
             {
                 "command": "workbench.action.debug.selectandstart",
