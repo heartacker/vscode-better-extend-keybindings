@@ -30,7 +30,7 @@
         "virtualWorkspaces": true
     },
     "engines": {
-        "vscode": "^1.22.0"
+        "vscode": "^1.65.0"
     },
     "icon": "extend-keyboard.png",
     "categories": [
@@ -130,8 +130,15 @@
                 "command": "editor.action.insertSnippet",
                 "key": "ctrl+alt+i",
                 "mac": "cmd+alt+i",
-                "when": "editorTextFocus || editorHasSelection",
-                "comment": "触发代码参数提示"
+                "when": "editorTextFocus",
+                "comment": "插入片段"
+            },
+            {
+                "command": "editor.action.surroundWithSnippet",
+                "key": "ctrl+alt+i",
+                "mac": "cmd+alt+i",
+                "when": "editorTextFocus && editorHasSelection",
+                "comment": "插入外侧片段"
             },
             {
                 "command": "editor.action.triggerParameterHints",
