@@ -18,8 +18,8 @@ Better extend keybindings to make VSCode better ❤️~
 |          <kbd>Ctrl+Win+=</kbd> | Maximize current Editor group           | 最大化当前编辑器组。                                                                                        |
 |          <kbd>Ctrl+Win+-</kbd> | Restore current Editor group Size       | 恢复当前编辑器组的大小。                                                                                    |
 |             <kbd>Alt+F11</kbd> | High Current Word                       | 高亮代码，需要你安装 [TextMarker](https://marketplace.visualstudio.com/items?itemName=ryu1kn.text-marker)。 |
-|                  <kbd>F1</kbd> | navigateBack                            | 返回, 等价<kbd>Alt +  ⬅</kbd>                                                                               |
-|              <kbd>Alt+F1</kbd> | navigateForward                         | 前进, 等价<kbd>Alt +  ➡</kbd>                                                                               |
+|                  <kbd>F1</kbd> | navigateBack                            | 返回, 等价<kbd>Alt +  ⬅</kbd>                                                                              |
+|              <kbd>Alt+F1</kbd> | navigateForward                         | 前进, 等价<kbd>Alt +  ➡</kbd>                                                                              |
 |             <kbd>Ctrl+F1</kbd> | goToImplementation                      | 转到实现或/定义, 等价<kbd>Ctrl+F12</kbd>                                                                    |
 |            <kbd>Shift+F1</kbd> | goToReferences                          | 查找引用, 等价<kbd>Shift+F12</kbd>                                                                          |
 |         <kbd>Ctrl+Alt+F5</kbd> | debug.selectandstart                    | 选择那个调试任务去运行 debug                                                                                |
@@ -35,9 +35,10 @@ Better extend keybindings to make VSCode better ❤️~
 |     <kbd>Ctrl+Shift+Down</kbd> | terminal.selectToNextCommand            | 终端中向下选择到下一个命令的内容                                                                            |
 |                                |                                         |                                                                                                             |
 | <kbd>Ctrl+Shift+G Ctrl+F</kbd> | git.fetchAll                            | 从所有远程中提取 fetch                                                                                      |
-| <kbd>Ctrl+Shift+G Ctrl+P</kbd> | git.pushTo                              | 推送到 git 仓库                                                                                             |
-|  <kbd>Ctrl+Shift+G Alt+P</kbd> | git.pull                                | 从 git 仓库拉取                                                                                             |
-| <kbd>Ctrl+Shift+G Ctrl+S</kbd> | git.sync                                | 从 git 仓库同步(pull&push)                                                                                  |
+| <kbd>Ctrl+Shift+G Ctrl+P</kbd> | git.pull                                | 从 git 仓库拉取                                                                                             |
+|  <kbd>Ctrl+Shift+G Alt+P</kbd> | git.pushTo                              | 推送到 git 仓库                                                                                             |
+|  <kbd>Ctrl+Shift+G Alt+S</kbd> | git.sync                                | 从 git 仓库同步(pull&push)                                                                                  |
+|  <kbd>Ctrl+Shift+G Alt+R</kbd> | git.syncRebase                          | 从 git 仓库同步(pull&push-rebase)                                                                           |
 
 ### For more information
 

@@ -2,7 +2,7 @@
     "name": "better-extend-keybindings",
     "displayName": "VSCode Better Extend Keymap \u2328\uFE0F",
     "description": "\u2328\uFE0F Better extend keybindings to make VSCode better! 更好的 无冲突 增强快捷键 使 VSCode 更好!\u2764\uFE0F",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "heartacker",
     "author": {
         "name": "heartacker",
@@ -64,20 +64,26 @@
             },
             {
                 "command": "git.pushTo",
-                "key": "ctrl+shift+g ctrl+p",
-                "mac": "cmd+shift+g cmd+p",
+                "key": "ctrl+shift+g alt+p",
+                "mac": "cmd+shift+g alt+p",
                 "when": "config.git.enabled && !git.missing && gitOpenRepositoryCount != 0"
             },
             {
                 "command": "git.pull",
-                "key": "ctrl+shift+g alt+p",
-                "mac": "cmd+shift+g alt+p",
+                "key": "ctrl+shift+g ctrl+p",
+                "mac": "cmd+shift+g cmd+p",
                 "when": "config.git.enabled && !git.missing && gitOpenRepositoryCount != 0"
             },
             {
                 "command": "git.sync",
                 "key": "ctrl+shift+g alt+s",
                 "mac": "cmd+shift+g alt+s",
+                "when": "config.git.enabled && !git.missing && gitOpenRepositoryCount != 0"
+            },
+            {
+                "command": "git.syncRebase",
+                "key": "ctrl+shift+g alt+r",
+                "mac": "cmd+shift+g alt+r",
                 "when": "config.git.enabled && !git.missing && gitOpenRepositoryCount != 0"
             },
             {
