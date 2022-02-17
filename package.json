@@ -2,7 +2,7 @@
     "name": "better-extend-keybindings",
     "displayName": "VSCode Better Extend Keymap \u2328\uFE0F",
     "description": "\u2328\uFE0F Better extend keybindings to make VSCode better! 更好的 无冲突 增强快捷键 使 VSCode 更好!\u2764\uFE0F",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "publisher": "heartacker",
     "author": {
         "name": "heartacker",
